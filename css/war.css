@@ -1,0 +1,154 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.head {
+	top: 0px;
+	left: 0px;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	background-color: #DB19FF;
+	position: fixed;
+	box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+	font-weight: bolder;
+	margin: 1.7rem auto;
+	font-size: 2rem;
+	margin-left: 7%;
+}
+
+.options {
+	font-size: 1.4em;
+	margin: 2rem auto;
+	margin-right: 7%;
+}
+
+.navs {
+	display: inline-block;
+	text-decoration: none;
+	margin-left: 2rem;
+	margin-bottom: 0;
+}
+
+.nav-display {
+	vertical-align: middle;
+	display: none;
+}
+
+.no-nav {
+	display: none;
+}
+
+.title, .navs {
+	color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+	.title {
+		font-size: 1.6rem;
+		margin: 0.7rem;
+	}
+
+	.options {
+		font-size: 1.2em;
+		margin: 1rem auto;
+		margin-right: 7%;
+	}
+
+	.navs {
+		display: none;
+		position: fixed;
+		right: 2rem;
+		top: 3rem;
+		color: #DB19FF;
+		font-weight: bolder;
+		border: solid thin #fff;
+		overflow: hidden;
+		width: 8rem;
+		background: #fff;
+	}
+
+	.navs:nth-child(1) {
+		top: 20px;
+	}
+
+	.nav-display {
+		display: initial;
+	}
+
+	.navs:hover {
+		background: #DB19FF;
+		color: #fff;
+	}
+
+	.no-nav {
+		display: inherit;
+		cursor: pointer;
+	}
+}
+
+.rating-card {
+	margin: 3rem 4%;
+	width: 300px;
+	height: 420px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+.king-pics {
+	border-radius: 10px 10px 0px 0px;
+}
+
+.rating-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 7rem;
+	justify-content: space-around;
+}
+
+.rating-card .king-name {
+	font-size: 1.5em;
+	font-weight: bolder;
+	margin: 0.5rem 1.2rem 0.2rem;
+
+}
+
+.rating-card .king-info {
+	padding: 0.3rem 0.7rem;
+	margin-left: 1rem;
+	border-radius: 10px;
+	font-weight: bold;
+	border: solid thin #DF31FF;
+	cursor: pointer;
+}
+
+.rating-card .king-info, .king-name, .rating {
+	color: #DF31FF;
+}
+
+.rating-card .rating {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 0.4rem;
+	margin-left: 1.2rem;
+}
+
+.rating-card .king-info:hover {
+	color: #fff;
+	background-color: #DF31FF;
+}
+
+.info-panel {
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-display {
+	margin-right: 1rem;
+	vertical-align: middle;
+}
